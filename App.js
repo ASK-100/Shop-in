@@ -7,7 +7,6 @@ export default function App() {
     <View style={styles.container}>
       <Text>Shop-in App</Text>
       <Text>Start Project</Text>
-      <StatusBar style="auto" />
     </View>
   );
 }
