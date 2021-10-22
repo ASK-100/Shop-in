@@ -6,7 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Shop-in App</Text>
-      <Text>Project Starth</Text>
+      <Text>Start Project</Text>
       <StatusBar style="auto" />
     </View>
   );
