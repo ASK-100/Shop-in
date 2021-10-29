@@ -4,19 +4,20 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 export default function Header() {
     return(
         <View style={styles.headertxt}>
-            <TouchableOpacity>
+            {/* <TouchableOpacity>
                 <Text style={styles.navigation}>Drawer</Text>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
             <Text style={styles.title}>SHOP-IN</Text>
         </View>
     )
 }
 const styles = StyleSheet.create({
     headertxt: {
-      paddingTop: 20,
-      padding: 20,
+      paddingTop: 25,
+      padding: 10,
       backgroundColor: '#FF7F50',
       alignItems: 'center',
+      display: 'flex',
     },
     navigation: {
       color: '#40e0d0',
@@ -29,7 +30,7 @@ const styles = StyleSheet.create({
       color: '#e1e1e1', // <-- The magic
       textAlign: 'center', // <-- The magic
       fontWeight: 'bold',
-      fontSize: 50,
+      fontSize: 40,
     }
     
   });
