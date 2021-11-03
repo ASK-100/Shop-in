@@ -1,36 +1,47 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { AntDesign } from '@expo/vector-icons';
 
 export default function Header() {
     return(
+      <View style={styles.container}>
         <View style={styles.headertxt}>
-            {/* <TouchableOpacity>
-                <Text style={styles.navigation}>Drawer</Text>
-            </TouchableOpacity> */}
-            <Text style={styles.title}>SHOP-IN</Text>
+          <TouchableOpacity>
+            <AntDesign name='menu-fold' size={35} color="#e1e1e1" style={styles.iconStyle}/>
+          </TouchableOpacity>
+          <Text style={styles.title}>SHOP-IN</Text>
         </View>
+      </View>
     )
 }
 const styles = StyleSheet.create({
-    headertxt: {
-      paddingTop: 25,
-      padding: 10,
-      backgroundColor: '#FF7F50',
-      alignItems: 'center',
-      display: 'flex',
-    },
-    navigation: {
-      color: '#40e0d0',
-      alignItems: 'flex-start',
-    },
-    title: {
-      textShadowColor: '#40e0d0',
-      textShadowOffset:  {width: 1.5, height: 1.5},
-      textShadowRadius: 3,
-      color: '#e1e1e1', // <-- The magic
-      textAlign: 'center', // <-- The magic
-      fontWeight: 'bold',
-      fontSize: 40,
-    }
+  container: {
+    
+  },
+  headertxt: {
+    backgroundColor: '#FF7F50',
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+  },
+  navigation: {
+    color: '#40e0d0',
+    alignItems: 'flex-start',
+  },
+  title: {
+    
+    color: '#e1e1e1', 
+    textAlign: 'center', 
+    fontWeight: 'bold',
+    fontSize: 40,
+    padding: 10,
+    paddingTop: 25,
+    paddingRight: 100,
+    paddingLeft: 60,
+    marginHorizontal: 10,
+  },
+  iconStyle: {
+    paddingTop: 20,
+  }
     
   });
