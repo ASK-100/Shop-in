@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View, Pressable } from 'react-native';
-import Header from './components/header';
 import Icon from 'react-native-ico';
 
 
