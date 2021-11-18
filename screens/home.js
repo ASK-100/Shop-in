@@ -14,7 +14,7 @@ export default function Home() {
   }
 
   changeText = (text) => {
-    console.log(text + ' has been pressed')
+    
     this.setState({
       screenText: text
     })
